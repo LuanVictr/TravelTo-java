@@ -1,0 +1,12 @@
+
+services:
+  database:
+    image: mysql:8.0.32
+    restart: always
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_USER: travelto
+      MYSQL_PASSWORD: admin1011
+      MYSQL_DATABASE: travelto
+      MYSQL_ROOT_PASSWORD: password
